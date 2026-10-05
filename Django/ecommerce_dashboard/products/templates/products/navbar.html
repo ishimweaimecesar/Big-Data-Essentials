@@ -1,0 +1,143 @@
+<nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top custom-navbar">
+
+<div class="container-fluid">
+
+    <a class="navbar-brand fw-bold" href="{% url 'home' %}">
+        <i class="fa-solid fa-cart-shopping"></i>
+        ONLINE SHOP
+    </a>
+
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-4">
+
+            <!-- HOME -->
+            <li class="nav-item">
+
+                <a class="nav-link active" href="{% url 'home' %}">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <!-- CATEGORIES -->
+            <li class="nav-item dropdown">
+
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    Categories
+
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+
+                    <li><a class="dropdown-item" href="#">Furniture</a></li>
+
+                    <li><a class="dropdown-item" href="#">Gaming</a></li>
+
+                    <li><a class="dropdown-item" href="#">Fashion</a></li>
+
+                    <li><a class="dropdown-item" href="#">Sports</a></li>
+
+                </ul>
+
+            </li>
+
+            <!-- RECOMMENDATIONS -->
+            <li class="nav-item">
+
+                <a class="nav-link" href="{% url 'recommendations' %}">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    Recommendations
+
+                </a>
+
+            </li>
+
+            <!-- ANALYTICS -->
+            <li class="nav-item">
+
+                <a class="nav-link" href="#">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Analytics
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <!-- SEARCH BAR -->
+        <form class="d-flex mx-auto w-50">
+
+            <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search products...">
+
+            <button class="btn btn-warning" type="submit">
+
+                <i class="fa-solid fa-search"></i>
+
+            </button>
+
+        </form>
+
+        <!-- RIGHT SIDE -->
+        <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="#">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    Login
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</nav>
